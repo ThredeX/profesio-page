@@ -1,8 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import "aos/dist/aos.css";
 import Aos from "aos";
-
 
 const HeaderComponent = styled.header`
   background-image: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
@@ -14,7 +13,7 @@ const HeaderComponent = styled.header`
   z-index: -1;
 `;
 const CoverHeader = styled.div`
-  background: linear-gradient(20deg, #6200ff, #0434e0cf);
+  background: linear-gradient(140deg, #070011, #0434e0ef);
   height: 100%;
   width: 100%;
   display: grid;
@@ -32,6 +31,9 @@ const Heading = styled.h1`
   font-weight: 300;
   font-size: clamp(4rem, 8vw, 20rem);
   font-family: "Kulim Park", sans-serif;
+  @media screen and (max-width: 500px) {
+    padding: 1rem 2rem;
+  }
 `;
 const UnsortedList = styled.ul`
   position: absolute;
@@ -41,6 +43,9 @@ const UnsortedList = styled.ul`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   background-color: #000000bd;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 const List = styled.li`
   padding-block: 0.5rem;
@@ -56,39 +61,49 @@ const ButtonHeader = styled.button`
   padding: 0.5rem 2rem;
   font-family: "Kulim Park", sans-serif;
   cursor: pointer;
-  border: none;
-  color: #fffffffd;
-  font-size: 1.9rem;
-  font-weight: 300;
   background-color: #24242800;
-  &:hover {
-    color: #ffffff60;
+  border: none;
+  & > a {
+    color: #fffffffd;
+    font-size: 1.9rem;
+    font-weight: 300;
+    &:hover {
+      color: #ffffff60;
+    }
   }
 `;
 
 export default function Header() {
   useEffect(() => {
-      Aos.init({duration: 7000})
-  }, [])
+    Aos.init({ duration: 7000 });
+  }, []);
   return (
     <>
       <HeaderComponent>
         <CoverHeader>
-          <Heading data-aos='fade-up'>Profesio</Heading>
+          <Heading data-aos="fade-up">Profesio</Heading>
         </CoverHeader>
       </HeaderComponent>
-      <UnsortedList data-aos='fade-down'>
-        <List >
-          <ButtonHeader>O aplikaci</ButtonHeader>
+      <UnsortedList data-aos="fade-down">
+        <List>
+          <ButtonHeader href="#about">
+            <a href="#about">O aplikaci</a>
+          </ButtonHeader>
         </List>
-        <List >
-          <ButtonHeader>Nasazení</ButtonHeader>
-        </List >
         <List>
-          <ButtonHeader>Kontakt</ButtonHeader>
-        </List >
+          <ButtonHeader>
+            <a href="#deploy">Nasazení</a>
+          </ButtonHeader>
+        </List>
         <List>
-          <ButtonHeader>Login</ButtonHeader>
+          <ButtonHeader>
+            <a href="#contact">Kontakt</a>
+          </ButtonHeader>
+        </List>
+        <List>
+          <ButtonHeader>
+            <a href="#">Login</a>
+          </ButtonHeader>
         </List>
       </UnsortedList>
     </>

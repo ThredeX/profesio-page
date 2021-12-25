@@ -9,7 +9,14 @@
 html, body{
     min-height: 100vh;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
 }
-
+@media screen and (max-width: 500px) {
+    body, html{
+        overflow-x: hidden;
+    }
+}
