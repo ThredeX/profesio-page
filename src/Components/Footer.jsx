@@ -18,14 +18,14 @@ const Heading2 = styled.h2`
   color: #fff;
   text-align: center;
   margin-top: 2rem;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1.2rem, 3vw, 2rem);
 `;
 const Container = styled.div`
 `;
 const Paragraph = styled.p`
   font-family: "Kulim Park", sans-serif;
   color: #fff;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: 1rem;
   text-align: center;
   margin-top: 1rem;
 `;

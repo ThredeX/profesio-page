@@ -43,10 +43,15 @@ const UnsortedList = styled.ul`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   background-color: #000000bd;
-  @media screen and (max-width: 500px) {
-    display: none;
+  @media screen and (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    & > li:nth-child(4),
+    li:nth-child(3) {
+      display: none;
+    }
   }
-`;
+  `;
 const List = styled.li`
   padding-block: 0.5rem;
   display: flex;
@@ -64,6 +69,10 @@ const ButtonHeader = styled.button`
   background-color: #24242800;
   border: none;
   & > a {
+    @media screen and (max-width: 500px){
+      font-size: 1.4rem;
+
+    }
     color: #fffffffd;
     font-size: 1.9rem;
     font-weight: 300;
