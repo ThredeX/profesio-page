@@ -47,7 +47,7 @@ export default function Footer() {
           <Heading2>Kontakt </Heading2>
           <Paragraph>Pokud máte jakékoliv otázky napište nám!</Paragraph>
           <Paragraph>
-            Email: <Email href="">profesio@gmail.com</Email>{" "}
+            Email: <Email href="mailto:profesio.contact@gmail.com">profesio.contact@gmail.com</Email>{" "}
           </Paragraph>
         </Container>
         <Container>
@@ -56,7 +56,7 @@ export default function Footer() {
           <Paragraph>Máte zájem o web na míru? </Paragraph>
           <Paragraph>
 
-          Email: <Email href="">thredex@gmail.com</Email>{" "}
+          Email: <Email href="mailto:thredextech@gmail.com">thredextech@gmail.com</Email>{" "}
           </Paragraph>
 
         </Container>

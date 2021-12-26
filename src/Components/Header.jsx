@@ -51,7 +51,7 @@ const UnsortedList = styled.ul`
       display: none;
     }
   }
-  `;
+`;
 const List = styled.li`
   padding-block: 0.5rem;
   display: flex;
@@ -69,9 +69,8 @@ const ButtonHeader = styled.button`
   background-color: #24242800;
   border: none;
   & > a {
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
       font-size: 1.4rem;
-
     }
     color: #fffffffd;
     font-size: 1.9rem;
