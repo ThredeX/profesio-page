@@ -108,11 +108,7 @@ export default function Header() {
             <a href="#contact">Kontakt</a>
           </ButtonHeader>
         </List>
-        <List>
-          <ButtonHeader>
-            <a href="#">Login</a>
-          </ButtonHeader>
-        </List>
+        
       </UnsortedList>
     </>
   );
