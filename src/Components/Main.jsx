@@ -177,38 +177,38 @@ export default function Main() {
         <Heading id="deploy">Nasazení aplikace</Heading>
         <UnListContainer>
           <UnList>
-            <List>
-              <Num data-aos="fade-up" data-aos-delay="5">
+            <List data-aos="fade-up" data-aos-delay="5">
+              <Num >
                 1
               </Num>
               <p>Kontaktujete nás</p>
             </List>
-            <List>
-              <Num data-aos="fade-up" data-aos-delay="10">
+            <List data-aos="fade-up" data-aos-delay="10">
+              <Num>
                 2
               </Num>
               <p>Domluvíme se</p>
             </List>
-            <List>
-              <Num data-aos="fade-up" data-aos-delay="15">
+            <List data-aos="fade-up" data-aos-delay="15">
+              <Num>
                 3
               </Num>
               <p>Nasadíme naší aplikaci na server školy</p>
             </List>
-            <List>
-              <Num data-aos="fade-up" data-aos-delay="20">
+            <List data-aos="fade-up" data-aos-delay="20">
+              <Num>
                 4
               </Num>
               <p>Administrátor nastaví potřebné informace</p>
             </List>
-            <List>
-              <Num data-aos="fade-up" data-aos-delay="25">
+            <List data-aos="fade-up" data-aos-delay="25">
+              <Num>
                 5
               </Num>
               <p>Aplikace je připravená k použítí!</p>
             </List>
-            <List>
-              <Num data-aos="fade-up" data-aos-delay="30">
+            <List data-aos="fade-up" data-aos-delay="30">
+              <Num>
                 +
               </Num>
               <p>Máte naší neustálou podporu</p>
